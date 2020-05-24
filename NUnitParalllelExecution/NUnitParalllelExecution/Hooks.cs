@@ -40,7 +40,7 @@ namespace NUnitParalllelExecution
         {
             _driver = new ChromeDriver();
             objectContainer.RegisterInstanceAs<IWebDriver>(_driver);
-            ExtentTestManager.CreateParentTest(GetType().Name);
+            ExtentTestManager.CreateParentTest(TestContext.CurrentContext.Test.ClassName);
             ExtentTestManager.CreateTest(TestContext.CurrentContext.Test.Name);
         }
 
