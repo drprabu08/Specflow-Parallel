@@ -33,11 +33,6 @@
     </Compile>
   </ItemGroup>
 
-  <ItemGroup>
-    <AssemblyAttribute Include="NUnit.Framework.ParallelizableAttribute(NUnit.Framework.ParallelScope.Fixtures)">
-      
-    </AssemblyAttribute>
-  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="ExtentReports">
